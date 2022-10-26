@@ -47,6 +47,9 @@ a {
     align-items: center;
     justify-content: center;
 }
+.btnPbmc:hover {
+    border: 1px solid var(--secondary-color);
+}
 .pbmc-tabs {
     background-color: #f0f0f0;
 }
@@ -57,8 +60,8 @@ a {
     background-color: white;
     -webkit-box-shadow: 0 2px 40px 8px rgb(15 15 15 / 15%);
     box-shadow: 0 2px 40px 8px rgb(15 15 15 / 15%);
-    border-radius: 0.5rem;
-    width: 149px;
+    border-radius: 0.35rem;
+    width: 129px;
     height: 89px;
 }
 @media only screen and (min-width:768px) and (max-width:991px) {
@@ -76,8 +79,11 @@ a {
         width: 3.5rem;
     }
 	.pbmc-tabs .nav-tabs .nav-item {
-		width: 109px;
+		width: 99px;
 	}
+    .pbmc-tabs .nav-tabs .nav-item a h4 {
+        font-size: 0.825rem !important;
+    }
 }
 @media only screen and (max-width:767px) {
     #pbmcNav .nav-brand img {
@@ -93,10 +99,12 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 89px;
 }
 .pbmc-tabs .nav-tabs .nav-item a h4 {
     font-size: 1.1rem;
     margin-bottom: 0;
+    margin-top: 0.825rem;
 }
 .pbmc-tabs .nav-tabs .nav-link.active, .pbmc-tabs .nav-tabs .nav-item.show .nav-link {
     background-color: var(--secondary-color);
@@ -147,4 +155,59 @@ table.table1 > tbody > tr > td:first-child {
     padding-left: 2%;
     border-right: #FFF solid 2px;
     border-bottom: #F7F7F7 solid 1px;
+}
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    border-color: transparent;
+}
+/* Login Page */
+.img {
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center center;
+}
+.ftco-section {
+    padding: 7rem 0;
+}
+.login-wrap {
+    position: relative;
+    color: rgba(255,255,255,.9);
+}
+
+.login-wrap .form-control {
+    height: 52px;
+    border: 1px solid transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.field-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #000;
+}
+.form-group {
+    position: relative;
+}
+.card-bg {
+    background-color: rgb(255 255 255 / 56%);
+}
+.social {
+    width: 100%;
+}
+.social a {
+    width: 50%;
+    display: block;
+    border: 1px solid rgba(255,255,255,.4);
+    color: #000;
+    background: #fff;
+}
+.card-bg label {
+    color: #000;
+    font-weight: 600;
 }

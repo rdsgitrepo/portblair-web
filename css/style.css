@@ -589,6 +589,12 @@ textarea:focus, input:focus {
 	font-weight: 500;
 	padding: 0 20px;
 }
+.classy-nav-container .classy-navbar .classynav ul li a.more  {
+	opacity: 0.25;
+}
+.classy-nav-container .classy-navbar .classynav ul li a.more:hover  {
+	color: #fff;
+}
 @media only screen and (min-width:992px) and (max-width:1199px) {
 	.classy-nav-container .classy-navbar .classynav ul li a {
 		font-size: 14px;
@@ -707,8 +713,9 @@ textarea:focus, input:focus {
 	}
 }
 .main-header-area .book-now-btn a:hover, .main-header-area .book-now-btn a:focus {
-	background-color: #2a303b;
-	color: #fff
+	background-color: var(--secondary-color);
+	color: #000;
+	border: 1px solid var(--secondary-color);
 }
 .main-header-area .search-btn {
 	cursor: pointer;
@@ -1034,7 +1041,17 @@ textarea:focus, input:focus {
 	height: 302px;
 	overflow: hidden;
 	border-right: 1px solid rgba(255, 255, 255, .2);
-	border-left: 1px solid rgba(255, 255, 255, .2)
+	border-left: 1px solid rgba(255, 255, 255, .2);
+	margin: 0.825rem;
+    border-radius: 0.625rem;
+	-webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+.single-project-slide:hover {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 /* @media only screen and (max-width:767px) {
 	.single-project-slide {
@@ -1073,6 +1090,9 @@ textarea:focus, input:focus {
 .single-project-slide .project-content .text h5 {
 	color: #fff;
 	margin-bottom: 0
+}
+.single-project-slide .project-content .text h5:hover {
+	color: var(--secondary-color);
 }
 .single-project-slide .hover-effects {
 	position: absolute;
@@ -1705,9 +1725,15 @@ textarea:focus, input:focus {
 	margin-bottom: 15px
 }
 .single-room-details-area ul li {
-	color: #636a76;
+	color: #000;
 	display: block;
 	margin-bottom: 15px
+}
+.single-room-details-area ul li a {
+	color: var(--primary-color);
+}
+.single-room-details-area ul li a:hover {
+	color: var(--secondary-color);
 }
 .room-service {
 	position: relative;
@@ -1727,6 +1753,13 @@ textarea:focus, input:focus {
 	max-width: 33.333333%;
 	width: 33.333333%;
 	margin-top: 30px
+}
+.room-service ul li a {
+	color: var(--bs-body-color);
+	font-weight: normal;
+}
+.room-service ul li a:hover {
+	color: var(--primary-color);
 }
 @media only screen and (max-width:767px) {
 	.room-service ul li {
@@ -2504,7 +2537,7 @@ textarea:focus, input:focus {
 }
 .single-post-area .post-thumbnail {
 	display: block;
-	margin-bottom: 30px
+	margin-bottom: 0.825rem;
 }
 .single-post-area .post-meta {
 	position: relative;
@@ -2514,6 +2547,7 @@ textarea:focus, input:focus {
 	align-items: center;
 	justify-content: space-between;
 	padding: 10px 10px 25px 10px;
+	display: none;
 }
 .single-post-area .post-meta a {
 	position: relative;
@@ -2539,7 +2573,7 @@ textarea:focus, input:focus {
 	margin-bottom: 10px;
 	text-decoration: none;
 	color: var(--grar-color);
-	padding: 0 10px;
+	padding: 0 10px 10px;
 }
 .single-post-area .post-title:hover, .single-post-area .post-title:focus {
 	color: var(--primary-color)
