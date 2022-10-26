@@ -547,10 +547,18 @@
 }
 
 .breakpoint-on .classynav {
-    padding-top: 80px;
-    margin-bottom: 80px
+    /* padding-top: 80px; */
+    padding-top: 0px;
+    margin-bottom: 80px;
 }
-
+.breakpoint-off .classynav .menu-title {
+    display: none;
+}
+.breakpoint-on .classynav .menu-title {
+    display: block;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid #fff;
+}
 .breakpoint-on .classynav ul {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;

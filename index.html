@@ -43,12 +43,13 @@
                             </div>
 
                             <div class="classynav">
+                                <img src="img/menu-title.png" alt="" class="menu-title">
                                 <ul id="nav" class="mb-0">
                                     <li class="active"><a href="index.html"><i class="fal fa-home fa-fw"></i> Home</a></li>
                                     <!-- <li><a href="flights.html">Flights</a></li> -->
                                     <li><a href="hotels.html">Hotels</a></li>
                                     <li><a href="carHire.html">Car Hire</a></li>
-                                    <li>
+                                    <!-- <li>
                                         <a href="#" class="more">More</a>
                                         <ul class="dropdown">
                                             <li><a href="#!">- Dropdown</a></li>
@@ -68,19 +69,21 @@
                                                 </ul>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                 </ul>
 
                                 <ul class="mb-0">
                                     <li><a href="help.html">Help </a></li>
                                     <li class="text-white divider">|</li>
                                     <li><a href="register.html">Register </a></li>
+                                    <li class="login-xs"><a href="login.html">login </a></li>
                                 </ul>
 
                                 <div class="book-now-btn">
                                     <a href="login.html">LOGIN </a>
                                 </div>
                             </div>
+                            <img src="img/menu-image.png" alt="" class="position-absolute menu-image">
                         </div>
                     </nav>
                 </div>
@@ -135,96 +138,108 @@
     </section>
 
     <section class="pbmc-about-area pt-md-1 section-padding-100-0">
+        
         <div class="hotel-search-form-area">
-            <div class="container-fluid">
-                <div class="">
-                    <form action="#" method="post">
-                        <div class="row justify-content-between align-items-end">
-                            <div class="col-12 col-sm-10 col-lg-11 hotel-search-form">
-                                <div class="row">
-                                    <div class="col-6 col-md-2">
-                                        <label for="category">Category</label>
-                                        <select name="category" id="category" class="form-control">
-                                            <option value="">Flights</option>
-                                            <option value="01">01</option>
-                                            <option value="02">02</option>
-                                            <option value="03">03</option>
-                                            <option value="04">04</option>
-                                            <option value="05">05</option>
-                                            <option value="06">06</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-6 col-md-2">
-                                        <label for="from">From</label>
-                                        <select name="from" id="from" class="form-control">
-                                            <option value="">Choose</option>
-                                            <option value="01">01</option>
-                                            <option value="02">02</option>
-                                            <option value="03">03</option>
-                                            <option value="04">04</option>
-                                            <option value="05">05</option>
-                                            <option value="06">06</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-6 col-md-2">
-                                        <label for="to">To</label>
-                                        <select name="to" id="to" class="form-control">
-                                            <option value="">Choose</option>
-                                            <option value="01">01</option>
-                                            <option value="02">02</option>
-                                            <option value="03">03</option>
-                                            <option value="04">04</option>
-                                            <option value="05">05</option>
-                                            <option value="06">06</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-6 col-md-2">
-                                        <label for="depart">Depart</label>
-                                        <select name="depart" id="depart" class="form-control">
-                                            <option value="">Choose</option>
-                                            <option value="01">01</option>
-                                            <option value="02">02</option>
-                                            <option value="03">03</option>
-                                            <option value="04">04</option>
-                                            <option value="05">05</option>
-                                            <option value="06">06</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-6 col-md-2">
-                                        <label for="return">Return</label>
-                                        <select name="return" id="return" class="form-control">
-                                            <option value="">Choose</option>
-                                            <option value="01">01</option>
-                                            <option value="02">02</option>
-                                            <option value="03">03</option>
-                                            <option value="04">04</option>
-                                            <option value="05">05</option>
-                                            <option value="06">06</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-6 col-md-2">
-                                        <label for="cabinTrvlr">Cabin & Travellers</label>
-                                        <select name="cabinTrvlr" id="cabinTrvlr" class="form-control">
-                                            <option value="">Choose</option>
-                                            <option value="01">01</option>
-                                            <option value="02">02</option>
-                                            <option value="03">03</option>
-                                            <option value="04">04</option>
-                                            <option value="05">05</option>
-                                            <option value="06">06</option>
-                                        </select>
-                                    </div>
+            <div class="container">
+                <div class="header-area">
+                    <div class="search-form d-flex align-items-center search-form-active">
+                        <div class="container">
+                            <form action="index.html">
+                                <input type="search" name="search-form-input" id="searchFormInput" placeholder="Type your keyword ...">
+                                <button type="submit"><i class="fal fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container-fluid">
+                <form action="#" method="post">
+                    <div class="row justify-content-between align-items-end">
+                        <div class="col-12 col-sm-10 col-lg-11 hotel-search-form">
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <label for="category">Category</label>
+                                    <select name="category" id="category" class="form-control">
+                                        <option value="">Flights</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
                                 </div>
-                            </div>
-                            <div class="col-12 col-sm-2 col-lg-1 p-0">
-                                <div class="col">
-                                    <button type="submit" class="btn pbmc-btn w-100">Search</button>
+                                <div class="col-6 col-md-2">
+                                    <label for="from">From</label>
+                                    <select name="from" id="from" class="form-control">
+                                        <option value="">Choose</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <label for="to">To</label>
+                                    <select name="to" id="to" class="form-control">
+                                        <option value="">Choose</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <label for="depart">Depart</label>
+                                    <select name="depart" id="depart" class="form-control">
+                                        <option value="">Choose</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <label for="return">Return</label>
+                                    <select name="return" id="return" class="form-control">
+                                        <option value="">Choose</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <label for="cabinTrvlr">Cabin & Travellers</label>
+                                    <select name="cabinTrvlr" id="cabinTrvlr" class="form-control">
+                                        <option value="">Choose</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-                    </form>
-                </div>
-            </div>
+                        <div class="col-12 col-sm-2 col-lg-1 p-0">
+                            <div class="col">
+                                <button type="submit" class="btn pbmc-btn w-100">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div> -->
+             <!-- /.container-fluid -->
         </div>
 
         <div class="container mt-md-3 mt-100">

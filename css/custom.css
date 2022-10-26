@@ -211,3 +211,27 @@ table.table1 > tbody > tr > td:first-child {
     color: #000;
     font-weight: 600;
 }
+.login-xs, .menu-image{
+    display: none !important;
+}
+.breakpoint-on .classynav ul li.login-xs {
+    display: block !important;
+}
+.breakpoint-on .book-now-btn a {
+	display: none !important;
+}
+.breakpoint-on .classy-menu .menu-image {
+    display: block !important;
+    bottom: 0;
+}
+.backHome {
+    background: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.backHome a {
+    color: #000;
+}
