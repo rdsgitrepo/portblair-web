@@ -223,6 +223,12 @@ table.table1 > tbody > tr > td:first-child {
 .breakpoint-on .classy-menu .menu-image {
     display: block !important;
     bottom: 0;
+    width: 16rem;
+}
+@media (min-width: 576px){
+    .breakpoint-on .classy-menu .menu-image {
+        bottom: -2.8125rem;
+    }
 }
 .backHome {
     background: var(--secondary-color);
@@ -235,3 +241,17 @@ table.table1 > tbody > tr > td:first-child {
 .backHome a {
     color: #000;
 }
+.search-bottom {
+    margin-bottom: 0.625rem;
+}
+.header .lead {
+    max-width: 620px;
+  }
+  
+  /** Below CSS is completely optional **/
+  
+  .gallery-item {
+    width: 200px;
+    padding: 5px;
+  }
+  

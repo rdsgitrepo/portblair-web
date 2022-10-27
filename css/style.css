@@ -6,6 +6,7 @@
 @import url(nice-select.css);
 @import url(fontawesome.5.15.4/fontawesome.5.15.4.css);
 @import url(bootstrap-datepicker.min.css);
+@import url(lightgallery/lightgallery.css);
 /* @import url(jquery-ui.min.css); */
 :root {
     --fontFamily: "Nunito Sans", sans-serif;
@@ -418,6 +419,12 @@ textarea:focus, input:focus {
 .pbmc-btn.btn-2:focus, .pbmc-btn.btn-2:hover {
 	color: #fff;
 	background-color: var(--primary-color)
+}
+@media only screen and (max-width:767px) {
+	.pbmc-btn {
+		margin-top: 0.625rem;
+		border-radius: 0.625rem !important;
+	}
 }
 .continue-btn {
 	padding: 0;
@@ -2051,7 +2058,8 @@ textarea:focus, input:focus {
 }
 @media only screen and (max-width:767px) {
 	.hotel-search-form-area .hotel-search-form {
-		padding: 30px 30px 0 30px;
+		/* padding: 30px 30px 0 30px; */
+		padding: 10px;
 		border-radius: 0.625rem !important;
 	}
 }
@@ -2080,9 +2088,10 @@ textarea:focus, input:focus {
 .hotel-search-form-area .hotel-search-form .form-control {
 	width: 100%;
 	margin-bottom: 0px;
-	/* height: 50px; */
+	height: 32px;
 	border: 0;
-	border-right: 1px solid #ebebeb;
+	/* border-right: 1px solid #ebebeb; */
+	border: 0px solid #ebebeb;
     font-size: 0.825rem;
     border-radius: 0;
 	text-transform: uppercase;
@@ -2093,11 +2102,11 @@ textarea:focus, input:focus {
 		font-size: 0.625rem;
 	}
 }
-@media only screen and (max-width:767px) {
+/* @media only screen and (max-width:767px) {
 	.hotel-search-form-area .hotel-search-form .form-control {
 		margin-bottom: 30px
 	}
-}
+} */
 .hotel-search-form-area .hotel-search-form .form-control:focus {
 	box-shadow: none;
 	border-color: var(--primary-color)

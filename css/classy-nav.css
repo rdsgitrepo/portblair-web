@@ -559,6 +559,9 @@
     background-color: var(--primary-color);
     border-bottom: 1px solid #fff;
 }
+.breakpoint-on .classynav .menu-title img {
+    width: 12rem;
+}
 .breakpoint-on .classynav ul {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
